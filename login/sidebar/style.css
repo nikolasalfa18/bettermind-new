@@ -1,0 +1,225 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; 
+}
+
+.sidebar {
+    background-color: #111827;
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction:column
+}
+
+.main-content {
+    background-color: whitesmoke;
+    flex-grow: 1;
+}
+
+.sidebar .description-header {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .header .list-item {
+    display: flex;
+    width: 212px;
+    padding: 12px 10px;
+    align-items: center; 
+    border-radius: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .list-item .icon {
+    margin-right: 3px;
+}
+
+.sidebar .header .illustration {
+    display: flex;
+    width: 212px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar .main .list-item .description {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: Ubuntu;
+    line-height: 16px;
+}
+
+.sidebar .main .list-item .icon {
+    margin-right: 12px;
+}
+
+.sidebar .main .list-item {
+    display: flex;
+    width: 212px;
+    padding: 12px 10px;
+    align-items: center;
+    border-radius: 8px;
+    width: 212px;
+    box-sizing: border-box;
+}
+
+.sidebar .main .list-item:hover {
+    background: #F90;
+    transition : all ease-in .1s
+}
+
+.sidebar .main .under {
+    margin-top: 200px;
+}
+
+.main-content .definisi .picture {
+    margin-top: 30px;
+}
+
+.main-content .definisi .judul_definisi {
+    margin-top: 30px;
+    display: flex;
+    width: 500px;
+    height: 68px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #F90;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    font-family: Ubuntu Condensed;
+    text-decoration: double;
+}
+
+.definisi a {
+    text-decoration: none;
+}
+
+.definisi .isi_definisi {
+    display: flex;
+    width: 875px;
+    height: 400px;
+    flex-direction: column;
+    flex-shrink: 0;
+    line-height: 25x;
+    color: black
+}
+
+.main-content .menu-utama .artikel .judul_menu {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #F90;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-family: Ubuntu Condensed;
+    text-decoration: double;
+}
+
+.main-content .menu-utama .artikel .list_artikel {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.main-content a{
+    text-decoration: none;
+}
+
+.main-content .menu-utama .artikel .list_artikel .judul_artikel {
+    color: #F90;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-family: ubuntu;
+}
+
+.main-content .menu-utama .artikel .list_artikel .sumber_artikel {
+    margin-top: 5px;
+    color: gray;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-family: ubuntu;
+}
+
+.main-content .menu-utama .artikel .list_artikel .cek_artikel {
+    display: flex;
+    width: 130px;
+    padding: 2px 10px;
+    align-items: center; 
+    border-radius: 100px;
+    height: 20px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: white;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    font-family: ubuntu;
+    background: navy;
+}
+
+.main-content .menu-utama .diagnosa .judul {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #F90;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-family: Ubuntu condensed;
+    text-decoration: double;
+}
+
+.main-content .menu-utama .diagnosa .pengantar {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: black;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-family: Ubuntu;
+    text-decoration: double;
+}
+
+.main-content .menu-utama .diagnosa .mulai-tes {
+    display: flex;
+    width: 100px;
+    padding: 5px 18px;
+    align-items: center; 
+    border-radius: 100px;
+    height: 20px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-left: 590px;
+    color: white;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+    font-family: ubuntu;
+    background: navy;
+  
+}
+
+html {
+    scroll-behavior: smooth;
+}
