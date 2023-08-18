@@ -1,4 +1,4 @@
-<?php
+<?html
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -105,24 +105,24 @@ if (isset($_POST['simpan'])) { //untuk create
                 Edit Data Diagnosa User
             </div>
             <div class="card-body">
-                <?php
+                <?html
                 if ($error) {
                     ?>
                     <div class="alert alert-danger" role="alert">
-                        <?php echo $error ?>
+                        <?html echo $error ?>
                     </div>
-                    <?php
-                    header("refresh:2;url=admin-datauser.php"); //2 detik
+                    <?html
+                    header("refresh:2;url=admin-datauser.html"); //2 detik
                 }
                 ?>
-                <?php
+                <?html
                 if ($sukses) {
                     ?>
                     <div class="alert alert-success" role="alert">
-                        <?php echo $sukses ?>
+                        <?html echo $sukses ?>
                     </div>
-                    <?php
-                    header("refresh:2;url=admin-datauser.php"); //2 detik
+                    <?html
+                    header("refresh:2;url=admin-datauser.html"); //2 detik
                 }
                 ?>
                 <form action="" method="POST">
@@ -131,19 +131,19 @@ if (isset($_POST['simpan'])) { //untuk create
                             <label for="namauser" class="col-sm-2 col-form-label">Nama User</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="namauser" name="namauser"
-                                    value="<?php echo $namauser ?>">
+                                    value="<?html echo $namauser ?>">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="namapenyakit" class="col-sm-2 col-form-label">Hasil Diagnosa</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="namapenyakit" name="namapenyakit"
-                                    value="<?php echo $namapenyakit ?>">
+                                    value="<?html echo $namapenyakit ?>">
                             </div>
                         </div>
                         <div class="col-12">
                             <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"> <span> <a
-                                    href="admin-home.php"><button type="button" class="btn btn-success">Back to
+                                    href="admin-home.html"><button type="button" class="btn btn-success">Back to
                                         home</button></a></span>
                         </div>
                     </form>
@@ -164,7 +164,7 @@ if (isset($_POST['simpan'])) { //untuk create
                             <th scope="col">Aksi</th>
                         </tr>
                     <tbody>
-                        <?php
+                        <?html
                         $sql2 = "select * from tb_data_diagnosa order by nama_user asc";
                         $q2 = mysqli_query($koneksi, $sql2);
                         while ($r2 = mysqli_fetch_array($q2)) {
@@ -174,22 +174,22 @@ if (isset($_POST['simpan'])) { //untuk create
                             ?>
                             <tr>
                                 <th scope="row">
-                                    <?php echo $namauser ?>
+                                    <?html echo $namauser ?>
                                 </th>
                                 <td scope="row">
-                                    <?php echo $namapenyakit ?>
+                                    <?html echo $namapenyakit ?>
                                 </td>
                                 <td scope="row">
-                                    <a href="admin-datauser.php?op=edit&namauser=<?php echo $namauser ?>"><button
+                                    <a href="admin-datauser.html?op=edit&namauser=<?html echo $namauser ?>"><button
                                             type="button" class="btn btn-warning">Edit</button></a>
-                                    <a href="admin-datauser.php?op=delete&namauser=<?php echo $namauser ?>"
+                                    <a href="admin-datauser.html?op=delete&namauser=<?html echo $namauser ?>"
                                         onclick="return confirm('Anda yakin menghapus data diagnosa user?')"><button type="button"
                                             class="btn btn-danger">Delete</button></a>
 
 
                                 </td>
                             </tr>
-                            <?php
+                            <?html
 
                         }
                         ?>
