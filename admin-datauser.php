@@ -112,7 +112,7 @@ if (isset($_POST['simpan'])) { //untuk create
                         <?php echo $error ?>
                     </div>
                     <?php
-                    header("refresh:2;url=admin-datauser.html"); //2 detik
+                    header("refresh:2;url=admin-datauser.php"); //2 detik
                 }
                 ?>
                 <?php
@@ -122,7 +122,7 @@ if (isset($_POST['simpan'])) { //untuk create
                         <?php echo $sukses ?>
                     </div>
                     <?php
-                    header("refresh:2;url=admin-datauser.html"); //2 detik
+                    header("refresh:2;url=admin-datauser.php"); //2 detik
                 }
                 ?>
                 <form action="" method="POST">
@@ -143,7 +143,7 @@ if (isset($_POST['simpan'])) { //untuk create
                         </div>
                         <div class="col-12">
                             <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"> <span> <a
-                                    href="admin-home.html"><button type="button" class="btn btn-success">Back to
+                                    href="admin-home.php"><button type="button" class="btn btn-success">Back to
                                         home</button></a></span>
                         </div>
                     </form>
@@ -180,9 +180,9 @@ if (isset($_POST['simpan'])) { //untuk create
                                     <?php echo $namapenyakit ?>
                                 </td>
                                 <td scope="row">
-                                    <a href="admin-datauser.html?op=edit&namauser=<?php echo $namauser ?>"><button
+                                    <a href="admin-datauser.php?op=edit&namauser=<?php echo $namauser ?>"><button
                                             type="button" class="btn btn-warning">Edit</button></a>
-                                    <a href="admin-datauser.html?op=delete&namauser=<?php echo $namauser ?>"
+                                    <a href="admin-datauser.php?op=delete&namauser=<?php echo $namauser ?>"
                                         onclick="return confirm('Anda yakin menghapus data diagnosa user?')"><button type="button"
                                             class="btn btn-danger">Delete</button></a>
 
