@@ -58,21 +58,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.php" class="nav-item nav-link active">Home</a>
                         <a href="#article_section" class="nav-item nav-link">Article</a>
-                        <!-- <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <!-- <a href="about.php" class="nav-item nav-link">About</a>
+                        <a href="service.php" class="nav-item nav-link">Service</a>
+                        <a href="project.php" class="nav-item nav-link">Project</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
+                                <a href="team.php" class="dropdown-item">Our Team</a>
+                                <a href="404.php" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                        <a href="contact.php" class="nav-item nav-link">Contact</a> -->
                     </div>
-                    <a href="login.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Login Admin</a>
+                    <a href="login.php" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Login Admin</a>
                 </div>
             </nav>
 
@@ -147,7 +147,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <form action="saved-session.html" method="post" enctype="multipart/form-data" role="form">
+            <form action="saved-session.php" method="post" enctype="multipart/form-data" role="form">
             <div class="modal-body">
                 <div class="form-group">
                   <label for="recipient-name" class="col-form-label">Nama :</label>
